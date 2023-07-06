@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- CSS-2 -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- JS-2 -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <title>Search Engines</title>
+  
+</head>
+<body>
+     <!-- Global container -->
+  <div class="flex items-center justify-center min-h-screen bg-cyan-50">
+    <!-- Card container -->
+    <div class="p-5 m-3 space-y-10 bg-white shadow-2xl rounded-3xl md:p-40">
+      <!-- Menu container -->
+      <div class="flex flex-col items-center justify-center space-y-3 md:flex-row md:space-y-0 md:space-x-8 md:mb-24 md:justify-end ">
+                 <!-- menu items -->
+          <div class="group">
+          <a href="#" class="">Vector</a>
+          <div class="mx-2 mt-2 duration-500 border-b-2 border-black opacity-0 group-hover:opacity-100">
+
+          </div>
+        </div>
+        <div class="group">
+          <a href="#" class="">Illustrations</a>
+          <div class="mx-2 mt-2 duration-500 border-b-2 border-black opacity-0 group-hover:opacity-100">
+            
+          </div>
+        </div>
+
+        <div class="group">
+          <a href="#" class="">Images</a>
+          <div class="mx-2 mt-2 duration-500 border-b-2 border-black opacity-0 group-hover:opacity-100">
+            
+          </div>
+        </div>
+
+        <div class="group">
+          <a href="https://github.com/arthurb613" target="_blank"><img src="images/git.png" alt="" class="w-9"></a>
+          <div class="mx-2 mt-2 duration-500 border-b-2 border-black opacity-0 group-hover:opacity-100">
+            
+          </div>
+        </div>
+        <div class="p-2 text-white bg-emerald-500 rounded-2xl" data-aos="zoom-in">Image Search Engines</div>
+    </div>
+    <!-- Search-container -->
+        <div class="flex flex-col justify-between space-y-5 md:flex-row md:space-y-0">
+           <!-- Input SVG container -->
+          <div class="flex justify-between border-b" id="search-form">
+            <input type="text" name="" id="search-box" class="ml-6 border-none md:w-80 placeholder:font-thin focus:outline-none" 
+            placeholder="Search" >
+            <button id="show-more-btn">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-8 text-gray-300 duration-200 cursor-pointer hover:scale-110"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                fill="none"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <circle cx="10" cy="10" r="7" />
+                <line x1="21" y1="21" x2="15" y2="15" />
+              </svg>
+            </button>
+          </div>
+          <!-- Upload Buttom -->
+          <button type="button" onclick="window.location.reload(false)" value="Rafraichir" class="py-3 mx-2 text-white duration-200 bg-black border rounded-md shadow-2xl px-14 hover:bg-white hover:text-black bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500">Actualiser</button>
+           <button  class="py-3 mx-2 text-white duration-200 bg-black border rounded-md shadow-2xl px-14 hover:bg-white hover:text-black bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500" id="showMoreBtn">Show More</button>
+        </div>
+        <!-- Gallery container -->
+        <div class="grid gap-3 md:grid-cols-3 lg:grid-cols-4" id="search-result">
+          <!-- image1 -->
+          <div class="relative group">
+            <img src="images/image1.jpg" alt="stock-image-API" class="w-72">
+            <div class="absolute bottom-0 left-0 right-0 p-0 px-4 text-white duration-500 bg-black opacity-0 group-hover:opacity-100 bg-opacity-40">
+              <div class="flex justify-between w-full">
+                <div class="font-normal">
+                  <p class="text-sm">Abstrait  Painting</p>
+                  <p class="text-xs">250 likes -35 Shares</p>
+                </div>
+                <div class="flex items-center">
+                  <img src="images/bookmark.svg" alt="bookmark">
+                </div>
+              </div>
+              </div>
+          </div>
+
+          <!-- image2 -->
+          <div class="relative group">
+            <img src="images/image2.jpg" alt="stock-image-API" class="w-72">
+            <div class="absolute bottom-0 left-0 right-0 p-0 px-4 text-white duration-500 bg-black opacity-0 group-hover:opacity-100 bg-opacity-40">
+              <div class="flex justify-between w-full">
+                <div class="font-normal">
+                  <p class="text-sm">Abstrait  Painting</p>
+                  <p class="text-xs">250 likes -35 Shares</p>
+                </div>
+                <div class="flex items-center">
+                  <img src="images/bookmark.svg" alt="bookmark">
+                </div>
+              </div>
+              </div>
+          </div>
+
+
+          <!-- image3 -->
+          <div class="relative group">
+            <img src="images/image3.jpg" alt="stock-image-API" class="w-72">
+            <div class="absolute bottom-0 left-0 right-0 p-0 px-4 text-white duration-500 bg-black opacity-0 group-hover:opacity-100 bg-opacity-40">
+              <div class="flex justify-between w-full">
+                <div class="font-normal">
+                  <p class="text-sm">Abstrait  Painting</p>
+                  <p class="text-xs">250 likes -35 Shares</p>
+                </div>
+                <div class="flex items-center">
+                  <img src="images/bookmark.svg" alt="bookmark">
+                </div>
+              </div>
+              </div>
+          </div>
+
+
+          <!-- image4 -->
+          <div class="relative group">
+            <img src="images/image4.jpg" alt="stock-image-API" class="w-72">
+            <div class="absolute bottom-0 left-0 right-0 p-0 px-4 text-white duration-500 bg-black opacity-0 group-hover:opacity-100 bg-opacity-40">
+              <div class="flex justify-between w-full">
+                <div class="font-normal">
+                  <p class="text-sm">Abstrait  Painting</p>
+                  <p class="text-xs">250 likes -35 Shares</p>
+                </div>
+                <div class="flex items-center">
+                  <img src="images/bookmark.svg" alt="bookmark">
+                </div>
+              </div>
+              </div>
+          </div>
+          <!-- fin images -->
+        </div>
+        </div>
+    
+  
+  </div>
+
+<script src="script.js"></script>
+<script>
+  AOS.init();
+</script>
+</body>
+</html>
